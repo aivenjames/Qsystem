@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-toggle-password]').forEach(function(button){button.addEventListener('click',function(){var input=document.getElementById(button.getAttribute('data-toggle-password'));if(!input)return;var visible=input.type==='password';input.type=visible?'text':'password';button.textContent=visible?'Hide':'Show';});});
